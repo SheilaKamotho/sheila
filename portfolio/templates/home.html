@@ -1,5 +1,298 @@
 {%extends 'base.html'%}
 {% block content %}
 {{block.super}}
-<h1>Hi My Name is Sheila</h1>
+
+  <!-- header -->
+  <header class="hero">
+    <div class="section-center hero-center">
+      <article class="hero-info">
+        <div class="underline"></div>
+        <h1>I'm Sheila</h1>
+        <h4>Software Developer</h4>
+        <a href="contact.html" class="btn hero-btn">hire me</a>
+      </article>
+      <article class="hero-img">
+        <img src="https://i.pinimg.com/564x/af/f1/28/aff128795f3de001b4cef283e555eed4.jpg" class="hero-photo" alt="john doe" />
+      </article>
+    </div>
+  </header>
+  <!-- end of header -->
+  <!-- about -->
+  <section class="section about">
+    <div class="section-center about-center">
+      <!-- about img -->
+      <article class="about-img">
+        <img
+          src="https://i.pinimg.com/564x/af/f1/28/aff128795f3de001b4cef283e555eed4.jpg"
+          class="hero-photo"
+          alt="about img"
+        />
+      </article>
+      <!-- about info -->
+      <article class="about-info">
+        <!-- section title -->
+        <div class="section-title about-title">
+          <h2>About</h2>
+          <div class="underline"></div>
+        </div>
+        <!--end of section title -->
+        <p>
+            I am a dedicated, organized and methodical individual with good interpersonal skills and an excellent team worker. I am keen and very willing to keep learning and developing new skills with an active and dynamic approach to work and getting things done.
+        </p>
+        <p>
+            I spend most of my day, experimenting with HTML, CSS, JavaScript, Python and their frameworks(Angular, Django, Flask). I enjoy coding and the challenge of learning something new everyday.
+        </p>
+        <a href="about.html" class="btn">about me</a>
+      </article>
+    </div>
+  </section>
+  <!-- end of about -->
+  <!-- services -->
+  <section class="section bg-grey">
+    <!-- section title -->
+    <div class="section-title">
+      <h2>services</h2>
+      <div class="underline"></div>
+    </div>
+    <!--end of section title -->
+    <div class="services-center section-center">
+      <!-- single service -->
+      <article class="service">
+        <i class="fas fa-code service-icon"></i>
+        <h4>Web Design</h4>
+        <div class="underline"></div>
+        <p>
+          I have a good eye for aesthetics and I create websites appealing to the eye.
+        </p>
+      </article>
+      <!-- end of single service -->
+      <!-- single service -->
+      <article class="service">
+        <i class="fab fa-sketch service-icon"></i>
+        <h4>Web Development</h4>
+        <div class="underline"></div>
+        <p>
+          I also bring the awesome UI to life by adding functionality to the website for even better user experience.
+        </p>
+      </article>
+      <!-- end of single service -->
+      <!-- single service -->
+      <article class="service">
+        <i class="fab fa-android service-icon"></i>
+        <h4>Maintenance</h4>
+        <div class="underline"></div>
+        <p>
+          I keep updgrading the website functionality and giving the UI a facelift.
+        </p>
+      </article>
+      <!-- end of single service -->
+    </div>
+  </section>
+  <!-- end of services -->
+  <!-- projects -->
+  <section class="section projects">
+    <!-- section title -->
+    <div class="section-title">
+      <h2>Latest Works</h2>
+      <div class="underline"></div>
+      <p class="projects-text">
+        Below are some of the projects I have worked on.
+      </p>
+    </div>
+    <!--end of section title -->
+    <div class="section-center projects-center">
+      <!-- single project -->
+      <a href="projects.html" class="project-1">
+        <article class="project">
+          <img
+            src="../media/neibi.png"
+            alt="single project"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h4>HoodApp</h4>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project -->
+      <!-- single project -->
+      <a href="projects.html" class="project-2">
+        <article class="project">
+          <img
+            src="../media/pizza.png"
+            alt="single project"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h4>Exotic Pizza</h4>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project --><!-- single project -->
+      <!-- <a href="projects.html" class="project-3">
+        <article class="project">
+          <img
+            src="../media/gal.png"
+            alt="single project"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h4>MyGalleryApp</h4>
+            
+          </div>
+        </article>
+      </a> -->
+      <!-- end of single project --><!-- single project -->
+      <a href="projects.html" class="project-4">
+        <article class="project">
+          <img
+            src="../media/news.png"
+            alt="single project"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h4>NewsApp</h4>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project -->
+    </div>
+  </section>
+  <!-- end of projects -->
+ 
+  <!-- skills -->
+  <section class="section skills">
+    <!-- section title -->
+    <div class="section-title">
+      <h2>skills</h2>
+      <div class="underline"></div>
+    </div>
+    <!--end of section title -->
+    <div class="section-center skills-center">
+      <article>
+        <h3>front end</h3>
+        <!-- single skill -->
+        <div class="skill">
+          <p>HTML/CSS</p>
+          <div class="skill-container">
+            <div class="skill-value"></div>
+            <p class="skill-text">
+              90%
+            </p>
+          </div>
+        </div>
+        <!--end of  single skill -->
+        <!-- single skill -->
+        <div class="skill">
+          <p>Javascript</p>
+          <div class="skill-container">
+            <div class="skill-value value-70"></div>
+            <p class="skill-text skill-text-70">
+              60%
+            </p>
+          </div>
+        </div>
+        <!--end of  single skill -->
+        <!-- single skill -->
+        <div class="skill">
+          <p>Angular</p>
+          <div class="skill-container">
+            <div class="skill-value value-80"></div>
+            <p class="skill-text skill-text-80">
+              80%
+            </p>
+          </div>
+        </div>
+        <!--end of  single skill -->
+      </article>
+      <article>
+        <h3>back end</h3>
+        <!-- single skill -->
+        <div class="skill">
+          <p>Python</p>
+          <div class="skill-container">
+            <div class="skill-value"></div>
+            <p class="skill-text">
+              70%
+            </p>
+          </div>
+        </div>
+        <!--end of  single skill -->
+        <!-- single skill -->
+        <div class="skill">
+          <p>Flask</p>
+          <div class="skill-container">
+            <div class="skill-value value-70"></div>
+            <p class="skill-text skill-text-70">
+              70%
+            </p>
+          </div>
+        </div>
+        <!--end of  single skill -->
+        <!-- single skill -->
+        <div class="skill">
+          <p>Django</p>
+          <div class="skill-container">
+            <div class="skill-value value-80"></div>
+            <p class="skill-text skill-text-80">
+              80%
+            </p>
+          </div>
+        </div>
+        <!--end of  single skill -->
+      </article>
+    </div>
+  </section>
+  <!-- end of skills -->
+  <!-- timeline -->
+  <section class="section timeline">
+    <!-- section title -->
+    <div class="section-title">
+      <h2>Experience</h2>
+      <div class="underline"></div>
+    </div>
+    <!--end of section title -->
+    <div class="section-center timeline-center">
+      <!-- single timeline item -->
+      <article class="timeline-item">
+        <h4>2020- Moringa School</h4>
+        <p>
+        Full Stack Web Developent
+        </p><hr>
+        Great start to my coding journey as I got equiped with quality Software Development, Communication, Teamwork and Research Skills
+        <span class="number">
+          1
+        </span>
+      </article>
+      <!-- end of  single timeline item -->
+      
+  </section>
+  <!--end of  timeline -->
+   <!-- connect -->
+   <section class="connect">
+    <!-- <video
+      controls
+      autoplay
+      muted
+      loop
+      class="video-container"
+      poster="./images/project-1.jpeg"
+    >
+      <source src="https://media4.giphy.com/media/xT9DPIlGnuHpr2yObu/200.webp?cid=ecf05e47ycqvhe92xe4dcfgjwrbm0ty1n4ignxb99wgm983l&rid=200.webp" type="video/mp4" />
+      Sorry, your browser does not support embedded videos
+    </video> -->
+    <div class="video-banner">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>get in touch</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <p class="video-text">
+      </p>
+      <a href="contact.html" class="btn">contact me</a>
+    </div>
+  </section>
+ 
+  <script src="./js/app.js"></script>
 {% endblock %}
