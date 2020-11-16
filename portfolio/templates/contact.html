@@ -1,0 +1,46 @@
+{%extends 'base.html'%}
+{% block content %}
+{{block.super}}
+<style>
+    .login-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 550px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background: floralwhite;
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.6);
+	border-radius: 10px;
+} 
+
+.login-box .user-box {
+	position: relative;
+}
+
+h6{
+  color: white;
+  
+}
+strong{
+  color: blanchedalmond;
+}
+</style>
+<div class="container" style="background: goldenrod;">
+    <div class="login-box">
+        <img style="float:left; width:150px; height: 150px; border-radius: 150px;" src="https://i.pinimg.com/564x/af/f1/28/aff128795f3de001b4cef283e555eed4.jpg"><strong style="float: right; padding-left:30px; font-size: 40px; color: goldenrod;">Sheila Kamotho</strong>
+         
+        <form action="">
+              <div class="user-box">
+                  <h5 style="color: brown; padding-left: 190px; font-weight: bolder;">Software Developer</h5>
+              </div>
+          </form>
+          <hr>
+          <h6 style="padding-left: 190px; font-weight: bold; color: brown;"><i class="fa fa-envelope" aria-hidden="true"></i> kamothosheila@gmail.com</h6>
+          <h6 style="padding-left: 190px; font-weight: bold; color: brown;"><i class="fa fa-phone" aria-hidden="true"></i> +254713376633</h6>
+          <h6 style="padding-left: 190px; font-weight: bold; color: brown;"><i class="fa fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/sheila-kamotho-030011162/" style="padding-left: 5px;"> Linkedin Profile</a></h6>
+      </div>
+</div>
+
+  {% endblock %}

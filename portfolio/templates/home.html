@@ -1,15 +1,18 @@
 {%extends 'base.html'%}
 {% block content %}
 {{block.super}}
-
   <!-- header -->
+<div class="container-fluid" style="background-color:floralwhite; padding-left: 40px;">
+  <h1 class="text-center">Sheila<span style="color: goldenrod;">Kamotho</span></h1>
+  <div class="underline"></div>
+</div>
   <header class="hero">
     <div class="section-center hero-center">
       <article class="hero-info">
         <div class="underline"></div>
         <h1>I'm Sheila</h1>
-        <h4>Software Developer</h4>
-        <a href="contact.html" class="btn hero-btn">hire me</a>
+        <h4 style="font-weight: bolder; font-size: small;">Software Developer</h4>
+        <a href="{% url 'contact' %}" class="btn hero-btn">hire me</a>
       </article>
       <article class="hero-img">
         <img src="https://i.pinimg.com/564x/af/f1/28/aff128795f3de001b4cef283e555eed4.jpg" class="hero-photo" alt="john doe" />
@@ -36,13 +39,13 @@
           <div class="underline"></div>
         </div>
         <!--end of section title -->
-        <p>
+        <p style="font-weight: bold; font-size: small;">
             I am a dedicated, organized and methodical individual with good interpersonal skills and an excellent team worker. I am keen and very willing to keep learning and developing new skills with an active and dynamic approach to work and getting things done.
         </p>
-        <p>
+        <p style="font-weight: bold; font-size: small;">
             I spend most of my day, experimenting with HTML, CSS, JavaScript, Python and their frameworks(Angular, Django, Flask). I enjoy coding and the challenge of learning something new everyday.
         </p>
-        <a href="about.html" class="btn">about me</a>
+        <!-- <a href="about.html" class="btn">about me</a> -->
       </article>
     </div>
   </section>
@@ -58,31 +61,31 @@
     <div class="services-center section-center">
       <!-- single service -->
       <article class="service">
-        <i class="fas fa-code service-icon"></i>
-        <h4>Web Design</h4>
+        <!-- <i class="fas fa-code service-icon"></i> -->
+        <h4 style="font-weight: bold; font-size: small;">Web Design</h4>
         <div class="underline"></div>
-        <p>
-          I have a good eye for aesthetics and I create websites appealing to the eye.
+        <p style="font-weight: bold; font-size: small;">
+          I have a good eye for aesthetics and I create websites that are appealing to the eye.
         </p>
       </article>
       <!-- end of single service -->
       <!-- single service -->
       <article class="service">
-        <i class="fab fa-sketch service-icon"></i>
-        <h4>Web Development</h4>
+        <!-- <i class="fab fa-sketch service-icon"></i> -->
+        <h4 style="font-weight: bold; font-size: small;">Web Development</h4>
         <div class="underline"></div>
-        <p>
+        <p style="font-weight: bold; font-size: small;">
           I also bring the awesome UI to life by adding functionality to the website for even better user experience.
         </p>
       </article>
       <!-- end of single service -->
       <!-- single service -->
       <article class="service">
-        <i class="fab fa-android service-icon"></i>
-        <h4>Maintenance</h4>
+        <!-- <i class="fab fa-android service-icon"></i> -->
+        <h4 style="font-weight: bold; font-size: small;">Maintenance</h4>
         <div class="underline"></div>
-        <p>
-          I keep updgrading the website functionality and giving the UI a facelift.
+        <p style="font-weight: bold; font-size: small;">
+          I keep updgrading the website functionality and giving the UI facelifts.
         </p>
       </article>
       <!-- end of single service -->
@@ -95,14 +98,14 @@
     <div class="section-title">
       <h2>Latest Works</h2>
       <div class="underline"></div>
-      <p class="projects-text">
+      <p style="font-weight: bold; font-size: medium;" class="projects-text">
         Below are some of the projects I have worked on.
       </p>
     </div>
     <!--end of section title -->
     <div class="section-center projects-center">
       <!-- single project -->
-      <a href="projects.html" class="project-1">
+      <a href="https://m1neighborhood.herokuapp.com/" class="project-1">
         <article class="project">
           <img
             src="../media/neibi.png"
@@ -110,13 +113,13 @@
             class="project-img"
           />
           <div class="project-info">
-            <h4>HoodApp</h4>
+            <h4 style="font-weight: bold; font-size: medium;">HoodApp</h4>
           </div>
         </article>
       </a>
       <!-- end of single project -->
       <!-- single project -->
-      <a href="projects.html" class="project-2">
+      <a href="https://sheilakamotho.github.io/Exotic-Pizza/" class="project-2">
         <article class="project">
           <img
             src="../media/pizza.png"
@@ -124,12 +127,12 @@
             class="project-img"
           />
           <div class="project-info">
-            <h4>Exotic Pizza</h4>
+            <h4 style="font-weight: bold; font-size: medium;">Exotic Pizza</h4>
           </div>
         </article>
       </a>
       <!-- end of single project --><!-- single project -->
-      <!-- <a href="projects.html" class="project-3">
+      <a href="https://ap1pgallery.herokuapp.com/" class="project-3">
         <article class="project">
           <img
             src="../media/gal.png"
@@ -137,13 +140,14 @@
             class="project-img"
           />
           <div class="project-info">
-            <h4>MyGalleryApp</h4>
+            <h4 style="font-weight: bold; font-size: medium;">MyGalleryApp</h4>
             
           </div>
         </article>
-      </a> -->
-      <!-- end of single project --><!-- single project -->
-      <a href="projects.html" class="project-4">
+      </a> 
+      <!-- end of single project -->
+      <!-- single project -->
+      <a href="https://latest-haeadlines-app.herokuapp.com/" class="project-4">
         <article class="project">
           <img
             src="../media/news.png"
@@ -151,7 +155,35 @@
             class="project-img"
           />
           <div class="project-info">
-            <h4>NewsApp</h4>
+            <h4 style="font-weight: bold; font-size: medium;">NewsApp</h4>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project -->
+       <!-- single project -->
+       <a href="https://sheilakamotho.github.io/Quotes/" class="project-5">
+        <article class="project">
+          <img
+            src="../media/quot.png"
+            alt="single project"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h4 style="font-weight: bold; font-size: medium;">Quotes</h4>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project -->
+       <!-- single project -->
+       <a href="https://sheilakamotho.github.io/GitHub-Search/" class="project-6">
+        <article class="project">
+          <img
+            src="../media/git.png"
+            alt="single project"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h4 style="font-weight: bold; font-size: medium;">Github Search</h4>
           </div>
         </article>
       </a>
@@ -161,7 +193,7 @@
   <!-- end of projects -->
  
   <!-- skills -->
-  <section class="section skills">
+  <section class="section skills" style="font-size: medium;">
     <!-- section title -->
     <div class="section-title">
       <h2>skills</h2>
@@ -170,74 +202,76 @@
     <!--end of section title -->
     <div class="section-center skills-center">
       <article>
-        <h3>front end</h3>
+        <h3 style="font-weight: bold; font-size: medium; padding-left: 250px;">front end</h3>
+        <div class="underline"></div>
         <!-- single skill -->
         <div class="skill">
-          <p>HTML/CSS</p>
-          <div class="skill-container">
-            <div class="skill-value"></div>
-            <p class="skill-text">
-              90%
-            </p>
-          </div>
-        </div>
-        <!--end of  single skill -->
-        <!-- single skill -->
-        <div class="skill">
-          <p>Javascript</p>
-          <div class="skill-container">
-            <div class="skill-value value-70"></div>
-            <p class="skill-text skill-text-70">
-              60%
-            </p>
-          </div>
-        </div>
-        <!--end of  single skill -->
-        <!-- single skill -->
-        <div class="skill">
-          <p>Angular</p>
-          <div class="skill-container">
+          <p style="padding-left: 270px;">HTML/CSS</p>
+          <!-- <div class="skill-container">
             <div class="skill-value value-80"></div>
-            <p class="skill-text skill-text-80">
-              80%
+            <p class="skill-text skill-text">
+              Strong
             </p>
-          </div>
+          </div> -->
+        </div>
+        <!--end of  single skill -->
+        <!-- single skill -->
+        <div class="skill">
+          <p style="padding-left: 270px;">Javascript</p>
+          <!-- <div class="skill-container">
+            <div class="skill-value value-40"></div>
+            <p class="skill-text skill-text">
+              Intermediate
+            </p>
+          </div> -->
+        </div>
+        <!--end of  single skill -->
+        <!-- single skill -->
+        <div class="skill">
+          <p style="padding-left: 270px;">Angular</p>
+          <!-- <div class="skill-container">
+            <div class="skill-value value-80"></div>
+            <p class="skill-text skill-text">
+              Strong
+            </p>
+          </div> -->
         </div>
         <!--end of  single skill -->
       </article>
       <article>
-        <h3>back end</h3>
+        <h3 style="font-weight: bold; font-size: larger; padding-left: 250px;">back end</h3>
+        <div class="underline"></div>
         <!-- single skill -->
         <div class="skill">
-          <p>Python</p>
-          <div class="skill-container">
+          <p style="padding-left: 270px;">Python</p>
+          <!-- <div class="skill-container">
             <div class="skill-value"></div>
             <p class="skill-text">
-              70%
+              Intermediate
             </p>
-          </div>
+          </div> -->
         </div>
         <!--end of  single skill -->
         <!-- single skill -->
         <div class="skill">
-          <p>Flask</p>
-          <div class="skill-container">
-            <div class="skill-value value-70"></div>
-            <p class="skill-text skill-text-70">
-              70%
+          <p style="padding-left: 270px;">Flask</p>
+          <!-- <div class="skill-container">
+            <div class="skill-value value"></div>
+            <p class="skill-text skill-text">
+              Intermediate
             </p>
-          </div>
+          </div> -->
         </div>
         <!--end of  single skill -->
         <!-- single skill -->
         <div class="skill">
-          <p>Django</p>
-          <div class="skill-container">
+          <p style="padding-left: 270px;">Django</p>
+          <!-- <div class="skill-container">
             <div class="skill-value value-80"></div>
-            <p class="skill-text skill-text-80">
-              80%
+            <p class="skill-text skill-text">
+              Strong
             </p>
-          </div>
+          </div> -->
         </div>
         <!--end of  single skill -->
       </article>
@@ -245,7 +279,7 @@
   </section>
   <!-- end of skills -->
   <!-- timeline -->
-  <section class="section timeline">
+  <section class="section timeline" style="font-weight: bold; font-size: small;">
     <!-- section title -->
     <div class="section-title">
       <h2>Experience</h2>
@@ -255,13 +289,23 @@
     <div class="section-center timeline-center">
       <!-- single timeline item -->
       <article class="timeline-item">
-        <h4>2020- Moringa School</h4>
+        <h4 style="font-weight: bold; font-size: medium; color: goldenrod;">2020- Moringa School</h4>
         <p>
         Full Stack Web Developent
-        </p><hr>
+        </p>
         Great start to my coding journey as I got equiped with quality Software Development, Communication, Teamwork and Research Skills
         <span class="number">
           1
+        </span>
+      </article>
+      <article class="timeline-item">
+        <h4 style="font-weight: bold; font-size: medium; color: goldenrod;">2020- Self Assigned Projects</h4>
+        <p>
+        Full Stack Web Developent
+        </p>
+        Practice on self assigned projects to up my coding skills
+        <span class="number">
+          2
         </span>
       </article>
       <!-- end of  single timeline item -->
@@ -290,7 +334,7 @@
       <!--end of section title -->
       <p class="video-text">
       </p>
-      <a href="contact.html" class="btn">contact me</a>
+      <a href="{% url 'contact' %}"  class="btn">contact me</a>
     </div>
   </section>
  
